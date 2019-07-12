@@ -13,7 +13,9 @@ from data_load import get_batch, load_vocab
 from hyperparams import Hyperparams as hp
 from modules import *
 from networks import TextEnc, AudioEnc, AudioDec, Attention, SSRN
+import os
 import tensorflow as tf
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2' 
 from utils import *
 import sys
 
